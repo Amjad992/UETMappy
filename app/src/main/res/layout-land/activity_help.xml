@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".HelpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helpTextView1"
+        android:id="@+id/help1"
+        android:gravity="left"
+        android:fontFamily="@string/fontFamily__roboto_black"
+        android:paddingTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helpTextView2"
+        android:id="@+id/help2"
+        android:gravity="left"
+        android:fontFamily="@string/fontFamily__roboto_black"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/help1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goHelpButton1"
+        android:text="@string/helpButton1"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:fontFamily="@string/fontFamily__roboto_black"
+        android:textSize="12dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/help4"
+        android:layout_alignEnd="@+id/help4" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helpTextView3"
+        android:id="@+id/help3"
+        android:gravity="left"
+        android:fontFamily="@string/fontFamily__roboto_black"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/goHelpButton1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helpTextView4"
+        android:id="@+id/help4"
+        android:gravity="left"
+        android:fontFamily="@string/fontFamily__roboto_black"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/help3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goHelpButton2"
+        android:text="@string/helpButton2"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:fontFamily="@string/fontFamily__roboto_black"
+        android:textSize="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

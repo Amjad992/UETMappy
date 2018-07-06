@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#F0F0E0">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UET Navigation App"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="60dp"
+        android:fontFamily="@string/fontFamily__roboto_condensed_light"
+        android:layout_marginRight="106dp"
+        android:layout_marginEnd="106dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goButton"
+        android:text="@string/goButton"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:fontFamily="@string/fontFamily__roboto_black"
+        android:textSize="70dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginRight="185dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="101dp" />
+
+
+</RelativeLayout>
+

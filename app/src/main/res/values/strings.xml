@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">UETMappy</string>
+
+    <string name="google_maps_key">AIzaSyD9wVtFo4VVKXPyPpxERyedz15RLA6pIQk</string>
+
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_navigation">Map</string>
+    <string name="title_activity_Favourites">Places</string>
+    <string name="title_activity_Help">Help</string>
+    <string name="title_activity_search_help">Search Options</string>
+    <string name="title_activity_about">About</string>
+
+
+
+    <color name="offwhite">#FFFFFF</color>
+
+    <!--+++++++++++++++++++++++++++-->
+    <!--added on Lollipop (LL- 5.0)-->
+    <!--+++++++++++++++++++++++++++-->
+    <string name="fontFamily__roboto_medium">sans-serif-medium</string>
+    <string name="fontFamily__roboto_black">sans-serif-black</string>
+    <string name="fontFamily__roboto_condensed_light">sans-serif-condensed-light</string>
+
+
+    // Activities //
+
+    // Main Activity
+    <string name="goButton">GO</string>
+
+    // Navigation Activity
+    <string name="searchBoxHint">" Enter a Location .."</string>
+    <string name="searchButton">Search for</string>
+    <string name="navigationButton">Navigate to</string>
+
+    // Help Activity
+    <string name="helpTextView1">" Using this app you can do the Following : "</string>
+    <string name="helpTextView2">" 1) Search for different places without the need of Internet Connection. (except for the very first time which is needed to download the map from GOOGLE servers)"</string>
+    <string name="helpTextView3">" 2) Navigate to the required place by typing the name. "</string>
+    <string name="helpTextView4">" 3) Find the required place by simply choosing from the places list. "</string>
+    <string name="helpButton1">" Go To Search Instruction "</string>
+    <string name="helpButton2">" Back "</string>
+
+    // Search Help Activity
+    <string name="searchHelpTextView1">" You can search in three ways in this application :"</string>
+    <string name="searchHelpTextView2">" 1) Searching by the Official name like :\n- Computer Science and Engineering Department\n- Mathematics Department\n-Student Service Center "</string>
+    <string name="searchHelpTextView3">" 2) Searching by the Common name for students like:\n-cse\n-math department\n-ssc "</string>
+    <string name="searchHelpTextView4">" 3) Searching for a place by a tag describing that place "</string>
+    <string name="searchHelpTextView5">" The Tags available are (food,department,center,store,hostel,pray,\nsport,event,atm,bank,health,library,bus stand,office,gate,house,museum,post office,lecture hall) "</string>
+    <string name="searchHelpButton1">" Back "</string>
+
+    // About Activity
+    // Search Help Activity
+    <string name="aboutTextView1">" UETMappy is the best companion for the Fresh Juniors in UET Lahore or the Strangers to help them navigate and roam all around University of Engineering and Technology - Lahore without the need of a guidance"</string>
+    <string name="aboutTextView2">" This App was Developed by a group of Computer Science Students of Session 2013 : "</string>
+    <string name="aboutTextView3">"Credits:"</string>
+    <string name="aboutTextView4">"\n- Amjad Majed Sultan\n- Muhammad Aleem Tahir\n- Syed Jamal Ali Naqvi\n- Muhammad Osama Arshad"</string>
+    <string name="aboutButton1">" Back "</string>
+
+
+
+
+    // Activities //
+
+
+
+
+
+    aboutButton1
+
+</resources>
