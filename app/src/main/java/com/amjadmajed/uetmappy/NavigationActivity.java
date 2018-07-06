@@ -531,7 +531,6 @@ public class NavigationActivity extends FragmentActivity implements OnMapReadyCa
         } else {
             placeToShow = (String) savedInstanceState.getSerializable("placeToShow");
         }
-        Toast.makeText(this, "pppppppp", Toast.LENGTH_LONG).show();
 
 
         getScreenDimanstions();
@@ -551,7 +550,6 @@ public class NavigationActivity extends FragmentActivity implements OnMapReadyCa
             }
         };
         bNavigation.setOnClickListener(findClickListenerNav);
-        Toast.makeText(this, "2", Toast.LENGTH_LONG).show();
 
 
         mBtnFind = (Button) findViewById(R.id.searchButton);
@@ -566,7 +564,6 @@ public class NavigationActivity extends FragmentActivity implements OnMapReadyCa
         };
         mBtnFind.setOnClickListener(findClickListenerSearch);
         ////////////////////////////////////////////////////////////
-        Toast.makeText(this, "3", Toast.LENGTH_LONG).show();
 
 
         map.setOnCameraChangeListener(new GoogleMap.OnCameraChangeListener() {
@@ -591,7 +588,6 @@ public class NavigationActivity extends FragmentActivity implements OnMapReadyCa
                 }
             }
         });
-        Toast.makeText(this, "4", Toast.LENGTH_LONG).show();
 
     }
 
@@ -704,13 +700,17 @@ public class NavigationActivity extends FragmentActivity implements OnMapReadyCa
         mMap.setMyLocationEnabled(true);
 
 
+
+
         // Construct a CameraPosition focusing on UET and animate the camera to that position.
         CameraPosition cameraPosition = new CameraPosition.Builder()
+                .target(uet)      // Sets the center of the map to Mountain View
                 .zoom(15)                   // Sets the zoom
                 .bearing(0)                // Sets the orientation of the camera to east
                 .tilt(0)                   // Sets the tilt of the camera to 30 degrees
                 .build();                   // Creates a CameraPosition from the builder
-        map.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+
+            map.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
 
         // setup zoom control buttons
