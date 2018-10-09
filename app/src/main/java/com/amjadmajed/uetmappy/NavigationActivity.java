@@ -691,9 +691,12 @@ public class NavigationActivity extends FragmentActivity implements OnMapReadyCa
 
         mMap = map;
 
+
+        // was false when I had it restricted to UET only - when it had restriction
+//        mMap.getUiSettings().setZoomGesturesEnabled(false);
         // We will provide our own controls
         mMap.getUiSettings().setZoomControlsEnabled(false);
-        mMap.getUiSettings().setZoomGesturesEnabled(false);
+        mMap.getUiSettings().setZoomGesturesEnabled(true);
         mMap.getUiSettings().setScrollGesturesEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(false);
         mMap.getUiSettings().setCompassEnabled(true);
@@ -937,22 +940,27 @@ public class NavigationActivity extends FragmentActivity implements OnMapReadyCa
     }
 
     void zoomOutButtonFunc() {
-        if (mMap.getCameraPosition().zoom >= 15.0f) {
-            // Zoom like normal
-            mMap.animateCamera(CameraUpdateFactory.zoomOut());
-        } else {
-            Toast.makeText(getBaseContext(), "Maximum zoom out level reached", Toast.LENGTH_SHORT).show();
-        }
+        mMap.animateCamera(CameraUpdateFactory.zoomOut());
+
+//        // That is when I restriced the zooming between 15 and 23 - when it had restriction
+//        if (mMap.getCameraPosition().zoom >= 15.0f) {
+//            // Zoom like normal
+//            mMap.animateCamera(CameraUpdateFactory.zoomOut());
+//        } else {
+//            Toast.makeText(getBaseContext(), "Maximum zoom out level reached", Toast.LENGTH_SHORT).show();
+//        }
     }
 
     void zoomInButtonFunc() {
-        if (mMap.getCameraPosition().zoom <= 23.0f) {
-            // Zoom like normal
-            mMap.animateCamera(CameraUpdateFactory.zoomIn());
-        } else {
-            Toast.makeText(getBaseContext(), "Maximum zoom in level reached", Toast.LENGTH_SHORT).show();
-
-        }
+        mMap.animateCamera(CameraUpdateFactory.zoomIn());
+//        // That is when I restriced the zooming between 15 and 23 - when it had restriction
+//        if (mMap.getCameraPosition().zoom <= 23.0f) {
+//            // Zoom like normal
+//            mMap.animateCamera(CameraUpdateFactory.zoomIn());
+//        } else {
+//            Toast.makeText(getBaseContext(), "Maximum zoom in level reached", Toast.LENGTH_SHORT).show();
+//
+//        }
     }
 
     int findPlaceInArray(String place) {
@@ -978,21 +986,23 @@ public class NavigationActivity extends FragmentActivity implements OnMapReadyCa
 
     boolean isCameraInBound() {
 
-        LatLng pos = map.getCameraPosition().target;
-
-        //LatLng cor1 = new LatLng(31.583581, 74.348670);
-        LatLng cor1 = new LatLng(31.583581, 74.348670);
-        LatLng cor2 = new LatLng(31.577920, 74.362993);
-
-        if (pos.latitude > cor1.latitude)
-            return false;
-        else if (pos.latitude < cor2.latitude)
-            return false;
-        else if (pos.longitude < cor1.longitude)
-            return false;
-        else if (pos.longitude > cor2.longitude)
-            return false;
-        else return true;
+        return true;
+        //That is when I needed to bound camera for UET only - when it had restriction
+//        LatLng pos = map.getCameraPosition().target;
+//
+//        //LatLng cor1 = new LatLng(31.583581, 74.348670);
+//        LatLng cor1 = new LatLng(31.583581, 74.348670);
+//        LatLng cor2 = new LatLng(31.577920, 74.362993);
+//
+//        if (pos.latitude > cor1.latitude)
+//            return false;
+//        else if (pos.latitude < cor2.latitude)
+//            return false;
+//        else if (pos.longitude < cor1.longitude)
+//            return false;
+//        else if (pos.longitude > cor2.longitude)
+//            return false;
+//        else return true;
     }
 
     void hideKeyboard() {
